@@ -13,8 +13,8 @@ app.get('/Biography', function (req,res) {
    res.sendFile(path.join(__dirname, 'ui', 'Biography.html'));
 });
 
-app.get('/Article-two', function (req,res) {
-  res.send('Article-two is requested and will be served here');
+app.get('/Movies', function (req,res) {
+  res.sendFile(path.join(__dirname, 'ui', 'Movies.html'));
 });
 
 app.get('/Article-three', function (req,res) {
