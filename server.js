@@ -76,7 +76,7 @@ function createTemplate (data) {
 
 app.get('/:articleName', function (req, res) {
     //articleName == Biography)
-    //articles[articleName]=={} content object for biography
+    //articles[articleName]=={} content object for Biography
     var articleName= req.params.articleName;
     res.send(createTemplate(articles[articleName]));
 });
