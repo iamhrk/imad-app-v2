@@ -12,13 +12,13 @@ button.onclick = function (){
             if (request.status===200) {
                 var counter =request.responseText;
                 var span =document.getElementById('count');
-                span.innerHTML=counter;
+                span.innerHTML=counter.toString();
             }
         }
     //no else part yet made    
     };
     
     //make request
-    request.open('GET','http://iamhrk.imad.hasura-app.io/c/counter',true);
+    request.open('GET','http://iamhrk.imad.hasura-app.io/counter',true);
     request.send(null);    
 };
